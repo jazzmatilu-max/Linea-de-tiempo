@@ -267,12 +267,10 @@ export default function App() {
           top: '20px',
           bottom: '80px',
           width: '6px',
-          background: 'linear-gradient(to bottom, #1e293b, #475569, #1e293b)',
+          backgroundColor: '#1e293b',
           transform: 'translateX(-50%)',
           zIndex: 1,
-          borderRadius: '4px',
-          boxShadow: '0 0 12px rgba(30, 41, 59, 0.5)',
-          animation: 'linePulse 2.5s ease-in-out infinite'
+          borderRadius: '4px'
         }}>
           <div style={{ position: 'absolute', top: '15%', left: '50%', transform: 'translateX(-50%)', fontSize: '14px' }}>🍃</div>
           <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translateX(-50%)', fontSize: '14px' }}>🌸</div>
@@ -297,11 +295,9 @@ export default function App() {
                         top: '50%',
                         width: '30px',
                         height: '2px',
-                        background: 'linear-gradient(to right, #1e293b, transparent)',
+                        backgroundColor: '#1e293b',
                         transform: 'translateY(-50%)',
-                        zIndex: 0,
-                        boxShadow: '0 0 8px rgba(30, 41, 59, 0.4)',
-                        transition: 'all 0.3s ease'
+                        zIndex: 0
                       }}></div>
                       
                       {/* Punta de flecha */}
@@ -437,11 +433,9 @@ export default function App() {
                         top: '50%',
                         width: '30px',
                         height: '2px',
-                        background: 'linear-gradient(to left, #1e293b, transparent)',
+                        backgroundColor: '#1e293b',
                         transform: 'translateY(-50%)',
-                        zIndex: 0,
-                        boxShadow: '0 0 8px rgba(30, 41, 59, 0.4)',
-                        transition: 'all 0.3s ease'
+                        zIndex: 0
                       }}></div>
                       
                       {/* Punta de flecha */}
@@ -546,6 +540,8 @@ export default function App() {
                 </div>
 
               </div>
+            );
+          })}
         </div>
 
         {/* CIERRE / NATURALEZA COMO SUJETO DE DERECHOS */}
@@ -606,9 +602,8 @@ export default function App() {
             borderRadius: '12px',
             maxWidth: '520px',
             width: '100%',
-            boxShadow: '8px 8px 0px 0px #1e293b, 0 12px 24px rgba(0,0,0,0.2)',
-            overflow: 'hidden',
-            animation: 'modalSlide 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)'
+            boxShadow: '8px 8px 0px 0px #1e293b',
+            overflow: 'hidden'
           }}>
             <div style={{
               backgroundColor: selectedHito.color,
@@ -659,10 +654,6 @@ export default function App() {
                   {selectedHito.contexto}
                 </p>
               </div>
-                <p style={{ fontSize: '11px', color: '#15803d', margin: 0, lineHeight: '1.5' }}>
-                  {selectedHito.contexto}
-                </p>
-              </div>
 
               <div style={{ backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
                 <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#92400e', display: 'block', marginBottom: '6px' }}>
@@ -695,19 +686,7 @@ export default function App() {
                   border: 'none',
                   cursor: 'pointer',
                   fontSize: '11px',
-                  textTransform: 'uppercase',
-                  transition: 'all 0.2s ease',
-                  boxShadow: '0 4px 0px #0f172a',
-                  transform: 'translateY(0)',
-                  position: 'relative'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 6px 0px #0f172a';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 0px #0f172a';
+                  textTransform: 'uppercase'
                 }}
               >
                 Cerrar ventana

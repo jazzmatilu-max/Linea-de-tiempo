@@ -58,84 +58,6 @@
   }
 }
 
-/* Animaciones profesionales para flechas SVG */
-@keyframes arrowFlow {
-  0% {
-    stroke-dashoffset: 1000;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes arrowPulse {
-  0%, 100% {
-    opacity: 0.8;
-    filter: drop-shadow(0 0 2px rgba(30, 41, 59, 0.4));
-  }
-  50% {
-    opacity: 1;
-    filter: drop-shadow(0 0 8px rgba(30, 41, 59, 0.8));
-  }
-}
-
-@keyframes linePulse {
-  0%, 100% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-/* Animación de emoji flotante */
-@keyframes floatEmoji {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-8px) rotate(5deg);
-  }
-  75% {
-    transform: translateY(-8px) rotate(-5deg);
-  }
-}
-
-/* Animación para tarjetas */
-@keyframes cardEnter {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animación de modal profesional */
-@keyframes modalSlide {
-  from {
-    opacity: 0;
-    transform: scale(0.9) translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-/* Estilos para flechas SVG profesionales */
-.arrow-svg {
-  animation: arrowPulse 2s ease-in-out infinite;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-}
-
-.arrow-line-animated {
-  animation: arrowFlow 1.5s ease-in-out, linePulse 2s ease-in-out infinite;
-  stroke-dasharray: 1000;
-}
-
 /* Smooth transitions para interactividad */
 * {
   scroll-behavior: smooth;
@@ -147,8 +69,7 @@
   height: 2px;
   background: linear-gradient(to right, #1e293b, transparent);
   opacity: 0.6;
-  animation: drawLine 0.8s ease-out, linePulse 2.5s ease-in-out infinite;
-  box-shadow: 0 0 4px rgba(30, 41, 59, 0.3);
+  animation: drawLine 0.8s ease-out;
 }
 
 .connector-arrow {

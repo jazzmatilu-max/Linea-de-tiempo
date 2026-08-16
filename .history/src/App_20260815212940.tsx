@@ -267,12 +267,10 @@ export default function App() {
           top: '20px',
           bottom: '80px',
           width: '6px',
-          background: 'linear-gradient(to bottom, #1e293b, #475569, #1e293b)',
+          backgroundColor: '#1e293b',
           transform: 'translateX(-50%)',
           zIndex: 1,
-          borderRadius: '4px',
-          boxShadow: '0 0 12px rgba(30, 41, 59, 0.5)',
-          animation: 'linePulse 2.5s ease-in-out infinite'
+          borderRadius: '4px'
         }}>
           <div style={{ position: 'absolute', top: '15%', left: '50%', transform: 'translateX(-50%)', fontSize: '14px' }}>🍃</div>
           <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translateX(-50%)', fontSize: '14px' }}>🌸</div>
@@ -546,6 +544,8 @@ export default function App() {
                 </div>
 
               </div>
+            );
+          })}
         </div>
 
         {/* CIERRE / NATURALEZA COMO SUJETO DE DERECHOS */}

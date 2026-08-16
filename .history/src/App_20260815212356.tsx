@@ -267,12 +267,10 @@ export default function App() {
           top: '20px',
           bottom: '80px',
           width: '6px',
-          background: 'linear-gradient(to bottom, #1e293b, #475569, #1e293b)',
+          backgroundColor: '#1e293b',
           transform: 'translateX(-50%)',
           zIndex: 1,
-          borderRadius: '4px',
-          boxShadow: '0 0 12px rgba(30, 41, 59, 0.5)',
-          animation: 'linePulse 2.5s ease-in-out infinite'
+          borderRadius: '4px'
         }}>
           <div style={{ position: 'absolute', top: '15%', left: '50%', transform: 'translateX(-50%)', fontSize: '14px' }}>🍃</div>
           <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translateX(-50%)', fontSize: '14px' }}>🌸</div>
@@ -297,11 +295,9 @@ export default function App() {
                         top: '50%',
                         width: '30px',
                         height: '2px',
-                        background: 'linear-gradient(to right, #1e293b, transparent)',
+                        backgroundColor: '#1e293b',
                         transform: 'translateY(-50%)',
-                        zIndex: 0,
-                        boxShadow: '0 0 8px rgba(30, 41, 59, 0.4)',
-                        transition: 'all 0.3s ease'
+                        zIndex: 0
                       }}></div>
                       
                       {/* Punta de flecha */}
@@ -326,17 +322,16 @@ export default function App() {
                           backgroundColor: '#ffffff',
                           border: '3px solid #1e293b',
                           borderRadius: '8px',
-                          boxShadow: hoveredHito === hito.id ? '12px 12px 0px 0px #1e293b, 0 8px 16px rgba(0,0,0,0.15)' : '6px 6px 0px 0px #1e293b, 0 4px 8px rgba(0,0,0,0.08)',
+                          boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
                           textAlign: 'left',
                           display: 'inline-block',
                           width: '100%',
                           overflow: 'hidden',
                           cursor: 'pointer',
                           transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                          transform: hoveredHito === hito.id ? 'translateY(-6px) scale(1.03)' : 'translateY(0) scale(1)',
+                          transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)',
                           position: 'relative',
-                          zIndex: 2,
-                          animation: 'cardEnter 0.6s ease-out'
+                          zIndex: 2
                         }}
                       >
                       <div style={{
@@ -375,31 +370,17 @@ export default function App() {
                           opacity: hoveredHito === hito.id ? 1 : 0,
                           overflow: 'hidden'
                         }}>
-                          <span style={{ fontWeight: '900', display: 'block', marginBottom: '4px' }}>✨ Impacto:</span>
+                          <span style={{ fontWeight: '900', display: 'block', marginBottom: '4px' }}>✨ Impacto clave:</span>
                           {hito.impacto}
                         </div>
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe', cursor: 'pointer', transition: 'all 0.2s ease' }}>
-                          <span>📖</span> Ver detalle
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
+                          <span>📖</span> Ampliar información y ver cita
                         </div>
-                        
-                        {/* Flecha descendente animada */}
-                        {hoveredHito === hito.id && (
-                          <div style={{
-                            marginTop: '8px',
-                            textAlign: 'center',
-                            fontSize: '14px',
-                            animation: 'arrowDown 1s ease-in-out infinite',
-                            opacity: 0.7,
-                            color: '#1e293b'
-                          }}>
-                            ↓
-                          </div>
-                        )}
                       </div>
                     </div>
                     </>
                   ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', fontSize: '44px', transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)', transform: hoveredHito === hito.id ? 'scale(1.35) rotate(-14deg)' : 'scale(1) rotate(0deg)', animation: hoveredHito === hito.id ? 'floatEmoji 2s ease-in-out infinite' : 'none', filter: hoveredHito === hito.id ? 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))' : 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} title="Elemento de biodiversidad y naturaleza">
+                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(-10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
                     </div>
                   )}
@@ -437,11 +418,9 @@ export default function App() {
                         top: '50%',
                         width: '30px',
                         height: '2px',
-                        background: 'linear-gradient(to left, #1e293b, transparent)',
+                        backgroundColor: '#1e293b',
                         transform: 'translateY(-50%)',
-                        zIndex: 0,
-                        boxShadow: '0 0 8px rgba(30, 41, 59, 0.4)',
-                        transition: 'all 0.3s ease'
+                        zIndex: 0
                       }}></div>
                       
                       {/* Punta de flecha */}
@@ -466,17 +445,16 @@ export default function App() {
                           backgroundColor: '#ffffff',
                           border: '3px solid #1e293b',
                           borderRadius: '8px',
-                          boxShadow: hoveredHito === hito.id ? '12px 12px 0px 0px #1e293b, 0 8px 16px rgba(0,0,0,0.15)' : '6px 6px 0px 0px #1e293b, 0 4px 8px rgba(0,0,0,0.08)',
+                          boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
                           textAlign: 'left',
                           display: 'inline-block',
                           width: '100%',
                           overflow: 'hidden',
                           cursor: 'pointer',
                           transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                          transform: hoveredHito === hito.id ? 'translateY(-6px) scale(1.03)' : 'translateY(0) scale(1)',
+                          transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)',
                           position: 'relative',
-                          zIndex: 2,
-                          animation: 'cardEnter 0.6s ease-out'
+                          zIndex: 2
                         }}
                       >
                       <div style={{
@@ -515,37 +493,25 @@ export default function App() {
                           opacity: hoveredHito === hito.id ? 1 : 0,
                           overflow: 'hidden'
                         }}>
-                          <span style={{ fontWeight: '900', display: 'block', marginBottom: '4px' }}>✨ Impacto:</span>
+                          <span style={{ fontWeight: '900', display: 'block', marginBottom: '4px' }}>✨ Impacto clave:</span>
                           {hito.impacto}
                         </div>
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe', cursor: 'pointer', transition: 'all 0.2s ease' }}>
-                          <span>📖</span> Ver detalle
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
+                          <span>📖</span> Ampliar información y ver cita
                         </div>
-                        
-                        {/* Flecha descendente animada */}
-                        {hoveredHito === hito.id && (
-                          <div style={{
-                            marginTop: '8px',
-                            textAlign: 'center',
-                            fontSize: '14px',
-                            animation: 'arrowDown 1s ease-in-out infinite',
-                            opacity: 0.7,
-                            color: '#1e293b'
-                          }}>
-                            ↓
-                          </div>
-                        )}
                       </div>
                     </div>
                     </>
                   ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '44px', transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)', transform: hoveredHito === hito.id ? 'scale(1.35) rotate(14deg)' : 'scale(1) rotate(0deg)', animation: hoveredHito === hito.id ? 'floatEmoji 2s ease-in-out infinite' : 'none', filter: hoveredHito === hito.id ? 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))' : 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} title="Elemento de biodiversidad y naturaleza">
+                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
                     </div>
                   )}
                 </div>
 
               </div>
+            );
+          })}
         </div>
 
         {/* CIERRE / NATURALEZA COMO SUJETO DE DERECHOS */}
@@ -606,9 +572,8 @@ export default function App() {
             borderRadius: '12px',
             maxWidth: '520px',
             width: '100%',
-            boxShadow: '8px 8px 0px 0px #1e293b, 0 12px 24px rgba(0,0,0,0.2)',
-            overflow: 'hidden',
-            animation: 'modalSlide 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)'
+            boxShadow: '8px 8px 0px 0px #1e293b',
+            overflow: 'hidden'
           }}>
             <div style={{
               backgroundColor: selectedHito.color,
@@ -659,10 +624,6 @@ export default function App() {
                   {selectedHito.contexto}
                 </p>
               </div>
-                <p style={{ fontSize: '11px', color: '#15803d', margin: 0, lineHeight: '1.5' }}>
-                  {selectedHito.contexto}
-                </p>
-              </div>
 
               <div style={{ backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
                 <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#92400e', display: 'block', marginBottom: '6px' }}>
@@ -695,19 +656,7 @@ export default function App() {
                   border: 'none',
                   cursor: 'pointer',
                   fontSize: '11px',
-                  textTransform: 'uppercase',
-                  transition: 'all 0.2s ease',
-                  boxShadow: '0 4px 0px #0f172a',
-                  transform: 'translateY(0)',
-                  position: 'relative'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 6px 0px #0f172a';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 0px #0f172a';
+                  textTransform: 'uppercase'
                 }}
               >
                 Cerrar ventana
