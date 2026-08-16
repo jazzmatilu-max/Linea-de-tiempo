@@ -610,9 +610,8 @@ export default function App() {
             borderRadius: '12px',
             maxWidth: '520px',
             width: '100%',
-            maxHeight: '85vh',
             boxShadow: '8px 8px 0px 0px #1e293b, 0 12px 24px rgba(0,0,0,0.2)',
-            overflowY: 'auto',
+            overflowY: 'auto',',
             animation: 'modalSlide 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)'
           }}>
             <div style={{
