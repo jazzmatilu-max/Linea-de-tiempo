@@ -23,8 +23,8 @@ const hitos: Hito[] = [
     pos: "derecha",
     titulo: "DERECHO ROMANO",
     subtitulo: "Hito: Lex Aquilia y res communis",
-    descripcion: "Desde el derecho romano nacierón los pilares doctrinales de la responsabilidad. La categoría de 'res communis' tenia en cuenta los recursos esenciales como el agua, el aire y el mar como bienes comunes de uso público. Paralelamente, la Lex Aquilia introdujo la obligación de reparar económicamente el daño injusto causado por culpa o dolo, conceptos históricos que siglos más tarde fundamentarían la protección del patrimonio natural y colectivo frente a los perjuicios ambientales.",
-    contexto: "El imperio romano desarrolló un sistema legal que reconocía dos categorías de propiedad: la privada (res privatae) y la común (res communis). Esta distinción fue revolucionaria para su época, sentando el precedente de que ciertos recursos debían ser protegidos para el beneficio colectivo.",
+    descripcion: "Desde el derecho romano nacierón los pilares doctrinales de la responsabilidad. La categoría de 'res communis' catalogaba recursos esenciales como el agua, el aire y el mar como bienes comunes de uso público. Paralelamente, la Lex Aquilia introdujo la obligación de reparar económicamente el daño injusto causado por culpa o dolo, conceptos históricos que siglos más tarde fundamentarían la protección del patrimonio natural y colectivo frente a los perjuicios ambientales.",
+    contexto: "El imperio romano desarrolló un sofisticado sistema legal que reconocía dos categorías de propiedad: la privada (res privatae) y la común (res communis). Esta distinción fue revolucionaria para su época, sentando el precedente de que ciertos recursos debían ser protegidos para el beneficio colectivo.",
     icono: "🏛️",
     iconoGrande: "⚖️🏛️",
     color: "#fca5a5",
@@ -53,7 +53,7 @@ const hitos: Hito[] = [
     pos: "derecha",
     titulo: "TEORÍA DEL RIESGO",
     subtitulo: "Hito: Evolución jurisprudencial de la responsabilidad extracontractual",
-    descripcion: "La adopción de la teoría del riesgo creado supuso una evolución decisiva en la jurisprudencia contenciosa y civil, permitiendo imputar responsabilidad e indemnizar a las víctimas por el ejercicio de actividades peligrosas sin necesidad de demostrar la culpa directa del involucrado. Este criterio jurídico facilitó el camino para el resarcimiento frente a daños complejos al entorno y a la colectividad.",
+    descripcion: "La adopción de la teoría del riesgo creado supuso una evolución decisiva en la jurisprudencia contenciosa y civil, permitiendo imputar responsabilidad e indemnizar a las víctimas por el ejercicio de actividades peligrosas sin necesidad de demostrar la culpa directa del agente. Este criterio jurídico facilitó el camino para el resarcimiento frente a daños complejos al entorno y a la colectividad.",
     contexto: "La teoría del riesgo creado surgió de decisiones judiciales que reconocieron que quien realiza actividades peligrosas debe responder por los daños aunque no medie culpa personal directa. Esto fue especialmente relevante para industrias y actividades extractivas que, aunque se realicen con cuidado, generan riesgos inherentes al ambiente.",
     icono: "⚖️",
     iconoGrande: "⚠️⚖️",
@@ -83,13 +83,13 @@ const hitos: Hito[] = [
     pos: "derecha",
     titulo: "CONSTITUCIÓN ECOLÓGICA",
     subtitulo: "Hito: Derechos colectivos, medio ambiente y acciones populares",
-    descripcion: "La Asamblea Nacional Constituyente consagró la denominada 'Constitución Ecológica' al integrar más de 49 disposiciones sobre medio ambiente, en donde el derecho colectivo fundamental e instituyó mecanismos procesales constitucionales de gran importancia como la Acción Popular (respaldada por la Ley 472), permitiendo exigir judicialmente la prevención y restauración de los daños al ecosistema.",
-    contexto: "La Constitución de 1991 incorporó más disposiciones ambientales que cualquier constitución anterior en Colombia. Artículos como el 49 (derecho a la salud y ambiente sano), 80 (deber del Estado de proteger la diversidad), y otros reconocieron que la protección ambiental es un asunto de interés general. La Acción Popular permitió a cualquier ciudadano demandar por daños ambientales sin necesidad de demostrar daño personal.",
+    descripcion: "La Asamblea Nacional Constituyente consagró la denominada 'Constitución Ecológica' al integrar más de 49 disposiciones sobre medio ambiente. Elevó el ambiente sano a rango de derecho colectivo fundamental e instituyó mecanismos procesales constitucionales de gran calado como la Acción Popular (respaldada por la Ley 472), permitiendo exigir judicialmente la prevención y restauración de los daños al ecosistema.",
+    contexto: "La Constitución de 1991 incorporó más disposiciones ambientales que cualquier constitución anterior en Colombia. Artículos clave como el 49 (derecho a la salud y ambiente sano), 80 (deber del Estado de proteger la diversidad), y otros reconocieron que la protección ambiental es un asunto de interés general. La Acción Popular permitió a cualquier ciudadano demandar por daños ambientales sin necesidad de demostrar daño personal.",
     icono: "🇨🇴",
     iconoGrande: "📜🌍",
     color: "#fbcfe8",
     badgeBg: "#78350f",
-    impacto: "Ambiente sano a derecho colectivo fundamental y crear acciones judiciales populares para su protección",
+    impacto: "Elevar el ambiente sano a derecho colectivo fundamental y crear acciones judiciales populares para su protección",
     fuente: "Colombia. Asamblea Nacional Constituyente. (1991). Derechos colectivos, medio ambiente y acciones populares (Proyecto de Acto Constituyente No. 62)."
   },
   {
@@ -114,12 +114,12 @@ const hitos: Hito[] = [
     titulo: "RÉGIMEN SANCIONATORIO",
     subtitulo: "Hito: Ley 1333 de 2009, precaución y nuevas tendencias de aseguramiento",
     descripcion: "La Ley 1333 de 2009 consolidó el régimen sancionatorio ambiental, dotando a las autoridades de facultades para imponer medidas preventivas y multas de hasta 5,000 salarios mínimos con enfoque estricto en la restauración. Hoy en día, este marco se complementa con la aplicación jurisprudencial del principio de precaución (Buitrago Dangond, 2018) y los retos del aseguramiento de la responsabilidad civil frente al cambio climático.",
-    contexto: "La Ley 1333 estableció un sistema progresivo de sanciones: amonestación, multas, decomiso de productos, cierre de operaciones y restitución. El principio de precaución adoptado permite tomar medidas preventivas incluso con incertidumbre científica completa si existe riesgo potencial de daño ambiental grave. Esta ley refleja la evolución hacia una responsabilidad ambiental más estricta y la importancia de prevenir en lugar de solo remediar.",
+    contexto: "La Ley 1333 estableció un sistema progresivo de sanciones: amonestación, multas, decomiso de productos, cierre de operaciones y restitución. El principio de precaución adoptado permite tomar medidas preventivas incluso con incertidumbre científica completa si existe riesgo potencial de daño ambiental grave. Esta ley refleja la evolución hacia una responsabilidad ambiental más estricta y la importancia creciente de prevenir en lugar de solo remediar.",
     icono: "⚠️",
     iconoGrande: "⚠️🔒",
     color: "#fca5a5",
     badgeBg: "#e11d48",
-    impacto: "Régimen sancionatorio con enfoque preventivo y aplicación del principio de precaución ante incertidumbre científica",
+    impacto: "Régimen sancionatorio exhaustivo con enfoque preventivo y aplicación del principio de precaución ante incertidumbre científica",
     fuente: "Cancelado Ávila, D. F., Solís Yepes, J. L., & Díaz Castillo, W. J. (s.f.). Capítulo IV: Parangón e implementación de los instrumentos económicos de política ambiental y sanciones por daños al medio ambiente en epicentros de conflicto armado en Colombia. En Análisis jurídico de protección a las víctimas y del medio ambiente (pp. 111-131). Escuela Superior de Guerra."
   },
   {
@@ -179,7 +179,7 @@ const hitos: Hito[] = [
     iconoGrande: "⚠️🔒",
     color: "#fca5a5",
     badgeBg: "#e11d48",
-    impacto: "Régimen sancionatorio con enfoque preventivo y aplicación del principio de precaución ante incertidumbre científica",
+    impacto: "Régimen sancionatorio exhaustivo con enfoque preventivo y aplicación del principio de precaución ante incertidumbre científica",
     fuente: "Cancelado Ávila, D. F., Solís Yepes, J. L., & Díaz Castillo, W. J. (s.f.). Capítulo IV: Parangón e implementación de los instrumentos económicos de política ambiental y sanciones por daños al medio ambiente en epicentros de conflicto armado en Colombia. En Análisis jurídico de protección a las víctimas y del medio ambiente (pp. 111-131). Escuela Superior de Guerra."
   }
 ];

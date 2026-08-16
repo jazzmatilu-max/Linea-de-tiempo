@@ -89,7 +89,7 @@ const hitos: Hito[] = [
     iconoGrande: "📜🌍",
     color: "#fbcfe8",
     badgeBg: "#78350f",
-    impacto: "Ambiente sano a derecho colectivo fundamental y crear acciones judiciales populares para su protección",
+    impacto: "Elevar el ambiente sano a derecho colectivo fundamental y crear acciones judiciales populares para su protección",
     fuente: "Colombia. Asamblea Nacional Constituyente. (1991). Derechos colectivos, medio ambiente y acciones populares (Proyecto de Acto Constituyente No. 62)."
   },
   {

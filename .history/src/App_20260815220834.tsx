@@ -89,7 +89,7 @@ const hitos: Hito[] = [
     iconoGrande: "📜🌍",
     color: "#fbcfe8",
     badgeBg: "#78350f",
-    impacto: "Ambiente sano a derecho colectivo fundamental y crear acciones judiciales populares para su protección",
+    impacto: "Elevar el ambiente sano a derecho colectivo fundamental y crear acciones judiciales populares para su protección",
     fuente: "Colombia. Asamblea Nacional Constituyente. (1991). Derechos colectivos, medio ambiente y acciones populares (Proyecto de Acto Constituyente No. 62)."
   },
   {
@@ -179,7 +179,7 @@ const hitos: Hito[] = [
     iconoGrande: "⚠️🔒",
     color: "#fca5a5",
     badgeBg: "#e11d48",
-    impacto: "Régimen sancionatorio con enfoque preventivo y aplicación del principio de precaución ante incertidumbre científica",
+    impacto: "Régimen sancionatorio exhaustivo con enfoque preventivo y aplicación del principio de precaución ante incertidumbre científica",
     fuente: "Cancelado Ávila, D. F., Solís Yepes, J. L., & Díaz Castillo, W. J. (s.f.). Capítulo IV: Parangón e implementación de los instrumentos económicos de política ambiental y sanciones por daños al medio ambiente en epicentros de conflicto armado en Colombia. En Análisis jurídico de protección a las víctimas y del medio ambiente (pp. 111-131). Escuela Superior de Guerra."
   }
 ];
