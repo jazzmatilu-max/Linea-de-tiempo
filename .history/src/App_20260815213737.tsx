@@ -174,12 +174,9 @@ const hitos: Hito[] = [
     titulo: "RÉGIMEN SANCIONATORIO",
     subtitulo: "Hito: Ley 1333 de 2009, precaución y nuevas tendencias de aseguramiento",
     descripcion: "La Ley 1333 de 2009 consolidó el régimen sancionatorio ambiental, dotando a las autoridades de facultades para imponer medidas preventivas y multas de hasta 5,000 salarios mínimos con enfoque estricto en la restauración. Hoy en día, este marco se complementa con la aplicación jurisprudencial del principio de precaución (Buitrago Dangond, 2018) y los retos del aseguramiento de la responsabilidad civil frente al cambio climático.",
-    contexto: "La Ley 1333 estableció un sistema progresivo de sanciones: amonestación, multas, decomiso de productos, cierre de operaciones y restitución. El principio de precaución adoptado permite tomar medidas preventivas incluso con incertidumbre científica completa si existe riesgo potencial de daño ambiental grave. Esta ley refleja la evolución hacia una responsabilidad ambiental más estricta y la importancia creciente de prevenir en lugar de solo remediar.",
     icono: "⚠️",
-    iconoGrande: "⚠️🔒",
     color: "#fca5a5",
     badgeBg: "#e11d48",
-    impacto: "Régimen sancionatorio exhaustivo con enfoque preventivo y aplicación del principio de precaución ante incertidumbre científica",
     fuente: "Cancelado Ávila, D. F., Solís Yepes, J. L., & Díaz Castillo, W. J. (s.f.). Capítulo IV: Parangón e implementación de los instrumentos económicos de política ambiental y sanciones por daños al medio ambiente en epicentros de conflicto armado en Colombia. En Análisis jurídico de protección a las víctimas y del medio ambiente (pp. 111-131). Escuela Superior de Guerra."
   }
 ];
@@ -659,6 +656,10 @@ export default function App() {
                 <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#166534', display: 'block', marginBottom: '6px' }}>
                   📌 Contexto:
                 </span>
+                <p style={{ fontSize: '11px', color: '#15803d', margin: 0, lineHeight: '1.5' }}>
+                  {selectedHito.contexto}
+                </p>
+              </div>
                 <p style={{ fontSize: '11px', color: '#15803d', margin: 0, lineHeight: '1.5' }}>
                   {selectedHito.contexto}
                 </p>

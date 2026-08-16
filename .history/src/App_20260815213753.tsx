@@ -663,6 +663,10 @@ export default function App() {
                   {selectedHito.contexto}
                 </p>
               </div>
+                <p style={{ fontSize: '11px', color: '#15803d', margin: 0, lineHeight: '1.5' }}>
+                  {selectedHito.contexto}
+                </p>
+              </div>
 
               <div style={{ backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
                 <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#92400e', display: 'block', marginBottom: '6px' }}>
