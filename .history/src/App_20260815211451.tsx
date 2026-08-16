@@ -414,9 +414,9 @@ export default function App() {
                       {/* Línea conectora del lado derecho */}
                       <div style={{
                         position: 'absolute',
-                        left: '-30px',
+                        left: '-15px',
                         top: '50%',
-                        width: '30px',
+                        width: '15px',
                         height: '2px',
                         backgroundColor: '#1e293b',
                         transform: 'translateY(-50%)',
@@ -426,12 +426,12 @@ export default function App() {
                       {/* Punta de flecha */}
                       <div style={{
                         position: 'absolute',
-                        left: '-35px',
+                        left: '-20px',
                         top: '50%',
                         width: '0',
                         height: '0',
                         borderStyle: 'solid',
-                        borderWidth: '6px 0 6px 8px',
+                        borderWidth: '5px 0 5px 7px',
                         borderColor: 'transparent transparent transparent #1e293b',
                         transform: 'translateY(-50%)',
                         zIndex: 0
