@@ -143,7 +143,7 @@ const hitos: Hito[] = [
     pos: "derecha",
     titulo: "CONSTITUCIÓN ECOLÓGICA",
     subtitulo: "Hito: Derechos colectivos, medio ambiente y acciones populares",
-    descripcion: "De acuerdo con el Acto Constituyente No. 62 (1991), la Asamblea Nacional Constituyente consagró la denominada 'Constitución Ecológica' al integrar más de 49 disposiciones sobre medio ambiente. Elevó el derecho a un ambiente sano a rango de derecho colectivo fundamental e instituyó mecanismos procesales constitucionales de gran importancia como la Acción Popular (respaldada por la Ley 472), permitiendo exigir judicialmente la prevención y restauración de los daños al ecosistema.",
+    descripcion: "De conformidad con el Acto Constituyente No. 62 (1991), la Asamblea Nacional Constituyente consagró la denominada 'Constitución Ecológica' al integrar más de 49 disposiciones sobre medio ambiente. Elevó el derecho a un ambiente sano a rango de derecho colectivo fundamental e instituyó mecanismos procesales constitucionales de gran importancia como la Acción Popular (respaldada por la Ley 472), permitiendo exigir judicialmente la prevención y restauración de los daños al ecosistema.",
     contexto: "La Constitución de 1991 incorporó más disposiciones ambientales que cualquier constitución anterior en Colombia. Artículos clave como el 49 (derecho a la salud y ambiente sano), 80 (deber del Estado de proteger la diversidad), y otros reconocieron que la protección ambiental es un asunto de interés general. La Acción Popular permitió a cualquier ciudadano demandar por daños ambientales sin necesidad de demostrar daño personal.",
     icono: "🇨🇴",
     iconoGrande: "📜🌍",
