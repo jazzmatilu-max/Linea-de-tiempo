@@ -113,7 +113,7 @@ const hitos: Hito[] = [
     pos: "derecha",
     titulo: "RÉGIMEN SANCIONATORIO",
     subtitulo: "Hito: Ley 1333 de 2009, precaución y nuevas tendencias de aseguramiento",
-    descripcion: "De acuerdo con Cancelado Ávila et al., la Ley 1333 de 2009 consolidó el régimen sancionatorio ambiental, dotando a las autoridades de facultades para imponer medidas preventivas y multas de hasta 5,000 salarios mínimos con enfoque estricto en la restauración. Según Buitrago Dangond (2018), este marco se complementa con la aplicación jurisprudencial del principio de precaución y los retos del aseguramiento de la responsabilidad civil frente al cambio climático.",
+    descripcion: "La Ley 1333 de 2009 consolidó el régimen sancionatorio ambiental, dotando a las autoridades de facultades para imponer medidas preventivas y multas de hasta 5,000 salarios mínimos con enfoque estricto en la restauración. Hoy en día, este marco se complementa con la aplicación jurisprudencial del principio de precaución (Buitrago Dangond, 2018) y los retos del aseguramiento de la responsabilidad civil frente al cambio climático.",
     contexto: "La Ley 1333 estableció un sistema progresivo de sanciones: amonestación, multas, decomiso de productos, cierre de operaciones y restitución. El principio de precaución adoptado permite tomar medidas preventivas incluso con incertidumbre científica completa si existe riesgo potencial de daño ambiental grave. Esta ley refleja la evolución hacia una responsabilidad ambiental más estricta y la importancia de prevenir en lugar de solo remediar.",
     icono: "⚠️",
     iconoGrande: "⚠️🔒",
