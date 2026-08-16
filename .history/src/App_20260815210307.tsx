@@ -193,7 +193,6 @@ const referenciasLista = [
 
 export default function App() {
   const [selectedHito, setSelectedHito] = useState<Hito | null>(null);
-  const [hoveredHito, setHoveredHito] = useState<number | null>(null);
 
   // Iconos de naturaleza seleccionados con criterio estético audiovisual (fauna, flora y ecosistemas)
   const iconosNaturaleza = ["🌿", "🌸", "🦋", "🌲", "🦜", "🌱", "🌺"];
@@ -281,20 +280,25 @@ export default function App() {
                   {isLeft ? (
                     <div 
                       onClick={() => setSelectedHito(hito)}
-                      onMouseEnter={() => setHoveredHito(hito.id)}
-                      onMouseLeave={() => setHoveredHito(null)}
                       style={{
                         backgroundColor: '#ffffff',
                         border: '3px solid #1e293b',
                         borderRadius: '8px',
-                        boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
+                        boxShadow: '6px 6px 0px 0px #1e293b',
                         textAlign: 'left',
                         display: 'inline-block',
                         width: '100%',
                         overflow: 'hidden',
                         cursor: 'pointer',
-                        transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                        transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)'
+                        transition: 'all 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-3px)';
+                        e.currentTarget.style.boxShadow = '8px 8px 0px 0px #1e293b';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = '6px 6px 0px 0px #1e293b';
                       }}
                     >
                       <div style={{
@@ -316,33 +320,16 @@ export default function App() {
                         <div style={{ fontSize: '11px', fontWeight: '900', color: '#1e293b', marginBottom: '6px' }}>
                           {hito.subtitulo}
                         </div>
-                        <p style={{ fontSize: '11px', color: '#334155', margin: '0 0 10px 0', lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                        <p style={{ fontSize: '11px', color: '#334155', margin: 0, lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                           {hito.descripcion}
                         </p>
-                        <div style={{
-                          backgroundColor: '#f0fdf4',
-                          border: '1px solid #86efac',
-                          borderRadius: '6px',
-                          padding: '8px',
-                          marginBottom: '10px',
-                          fontSize: '10px',
-                          fontWeight: '700',
-                          color: '#166534',
-                          transition: 'all 0.3s ease',
-                          maxHeight: hoveredHito === hito.id ? '100px' : '0px',
-                          opacity: hoveredHito === hito.id ? 1 : 0,
-                          overflow: 'hidden'
-                        }}>
-                          <span style={{ fontWeight: '900', display: 'block', marginBottom: '4px' }}>✨ Impacto clave:</span>
-                          {hito.impacto}
-                        </div>
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
+                        <div style={{ marginTop: '10px', display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
                           <span>📖</span> Ampliar información y ver cita
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(-10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
+                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', fontSize: '32px' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
                     </div>
                   )}
@@ -359,11 +346,9 @@ export default function App() {
                     fontSize: '10px',
                     fontWeight: '900',
                     textAlign: 'center',
-                    boxShadow: hoveredHito === hito.id ? '0px 0px 12px rgba(0,0,0,0.3)' : '4px 4px 0px 0px #1e293b',
+                    boxShadow: '4px 4px 0px 0px #1e293b',
                     whiteSpace: 'nowrap',
-                    zIndex: 3,
-                    transition: 'all 0.3s ease',
-                    transform: hoveredHito === hito.id ? 'scale(1.1)' : 'scale(1)'
+                    zIndex: 3
                   }}>
                     {hito.fecha}
                   </div>
@@ -374,20 +359,25 @@ export default function App() {
                   {!isLeft ? (
                     <div 
                       onClick={() => setSelectedHito(hito)}
-                      onMouseEnter={() => setHoveredHito(hito.id)}
-                      onMouseLeave={() => setHoveredHito(null)}
                       style={{
                         backgroundColor: '#ffffff',
                         border: '3px solid #1e293b',
                         borderRadius: '8px',
-                        boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
+                        boxShadow: '6px 6px 0px 0px #1e293b',
                         textAlign: 'left',
                         display: 'inline-block',
                         width: '100%',
                         overflow: 'hidden',
                         cursor: 'pointer',
-                        transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                        transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)'
+                        transition: 'all 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-3px)';
+                        e.currentTarget.style.boxShadow = '8px 8px 0px 0px #1e293b';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = '6px 6px 0px 0px #1e293b';
                       }}
                     >
                       <div style={{
@@ -409,33 +399,16 @@ export default function App() {
                         <div style={{ fontSize: '11px', fontWeight: '900', color: '#1e293b', marginBottom: '6px' }}>
                           {hito.subtitulo}
                         </div>
-                        <p style={{ fontSize: '11px', color: '#334155', margin: '0 0 10px 0', lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                        <p style={{ fontSize: '11px', color: '#334155', margin: 0, lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                           {hito.descripcion}
                         </p>
-                        <div style={{
-                          backgroundColor: '#f0fdf4',
-                          border: '1px solid #86efac',
-                          borderRadius: '6px',
-                          padding: '8px',
-                          marginBottom: '10px',
-                          fontSize: '10px',
-                          fontWeight: '700',
-                          color: '#166534',
-                          transition: 'all 0.3s ease',
-                          maxHeight: hoveredHito === hito.id ? '100px' : '0px',
-                          opacity: hoveredHito === hito.id ? 1 : 0,
-                          overflow: 'hidden'
-                        }}>
-                          <span style={{ fontWeight: '900', display: 'block', marginBottom: '4px' }}>✨ Impacto clave:</span>
-                          {hito.impacto}
-                        </div>
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
+                        <div style={{ marginTop: '10px', display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
                           <span>📖</span> Ampliar información y ver cita
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
+                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '32px' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
                     </div>
                   )}
@@ -530,47 +503,21 @@ export default function App() {
               </button>
             </div>
             <div style={{ padding: '24px' }}>
-              <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-                <div style={{ fontSize: '48px', marginBottom: '12px', animation: 'pulse 2s infinite' }}>
-                  {selectedHito.iconoGrande}
-                </div>
-              </div>
-              
               <div style={{ display: 'inline-block', backgroundColor: selectedHito.badgeBg, color: '#fff', fontSize: '10px', fontWeight: '900', padding: '5px 10px', borderRadius: '6px', marginBottom: '12px', border: '2px solid #1e293b' }}>
                 {selectedHito.fecha}
               </div>
-              
               <h3 style={{ fontSize: '13px', fontWeight: '900', color: '#1e293b', margin: '0 0 10px 0' }}>
                 {selectedHito.subtitulo}
               </h3>
-              
-              <p style={{ fontSize: '11px', color: '#334155', lineHeight: '1.6', margin: '0 0 16px 0', backgroundColor: '#f8fafc', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
+              <p style={{ fontSize: '11px', color: '#334155', lineHeight: '1.6', margin: '0 0 18px 0', backgroundColor: '#f8fafc', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
                 {selectedHito.descripcion}
               </p>
-
-              <div style={{ backgroundColor: '#f0fdf4', border: '2px solid #86efac', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#166534', display: 'block', marginBottom: '6px' }}>
-                  📌 Contexto Histórico:
-                </span>
-                <p style={{ fontSize: '11px', color: '#15803d', margin: 0, lineHeight: '1.5' }}>
-                  {selectedHito.contexto}
-                </p>
-              </div>
-
-              <div style={{ backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#92400e', display: 'block', marginBottom: '6px' }}>
-                  ✨ Impacto Jurídico y Social:
-                </span>
-                <p style={{ fontSize: '11px', color: '#b45309', margin: 0, lineHeight: '1.5', fontWeight: '600' }}>
-                  {selectedHito.impacto}
-                </p>
-              </div>
               
               <div style={{ borderTop: '2px dashed #cbd5e1', paddingTop: '14px' }}>
                 <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#1e293b', display: 'block', marginBottom: '6px' }}>
                   📖 Referencia Bibliográfica Oficial:
                 </span>
-                <p style={{ fontSize: '10px', color: '#475569', fontStyle: 'italic', margin: 0, backgroundColor: '#fff3cd', padding: '10px', borderRadius: '6px', border: '1px solid #f5d76e', lineHeight: '1.4' }}>
+                <p style={{ fontSize: '11px', color: '#475569', fontStyle: 'italic', margin: 0, backgroundColor: '#fef3c7', padding: '10px', borderRadius: '6px', border: '1px solid #f59e0b' }}>
                   {selectedHito.fuente}
                 </p>
               </div>

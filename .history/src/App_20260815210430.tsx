@@ -530,47 +530,21 @@ export default function App() {
               </button>
             </div>
             <div style={{ padding: '24px' }}>
-              <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-                <div style={{ fontSize: '48px', marginBottom: '12px', animation: 'pulse 2s infinite' }}>
-                  {selectedHito.iconoGrande}
-                </div>
-              </div>
-              
               <div style={{ display: 'inline-block', backgroundColor: selectedHito.badgeBg, color: '#fff', fontSize: '10px', fontWeight: '900', padding: '5px 10px', borderRadius: '6px', marginBottom: '12px', border: '2px solid #1e293b' }}>
                 {selectedHito.fecha}
               </div>
-              
               <h3 style={{ fontSize: '13px', fontWeight: '900', color: '#1e293b', margin: '0 0 10px 0' }}>
                 {selectedHito.subtitulo}
               </h3>
-              
-              <p style={{ fontSize: '11px', color: '#334155', lineHeight: '1.6', margin: '0 0 16px 0', backgroundColor: '#f8fafc', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
+              <p style={{ fontSize: '11px', color: '#334155', lineHeight: '1.6', margin: '0 0 18px 0', backgroundColor: '#f8fafc', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
                 {selectedHito.descripcion}
               </p>
-
-              <div style={{ backgroundColor: '#f0fdf4', border: '2px solid #86efac', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#166534', display: 'block', marginBottom: '6px' }}>
-                  📌 Contexto Histórico:
-                </span>
-                <p style={{ fontSize: '11px', color: '#15803d', margin: 0, lineHeight: '1.5' }}>
-                  {selectedHito.contexto}
-                </p>
-              </div>
-
-              <div style={{ backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#92400e', display: 'block', marginBottom: '6px' }}>
-                  ✨ Impacto Jurídico y Social:
-                </span>
-                <p style={{ fontSize: '11px', color: '#b45309', margin: 0, lineHeight: '1.5', fontWeight: '600' }}>
-                  {selectedHito.impacto}
-                </p>
-              </div>
               
               <div style={{ borderTop: '2px dashed #cbd5e1', paddingTop: '14px' }}>
                 <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#1e293b', display: 'block', marginBottom: '6px' }}>
                   📖 Referencia Bibliográfica Oficial:
                 </span>
-                <p style={{ fontSize: '10px', color: '#475569', fontStyle: 'italic', margin: 0, backgroundColor: '#fff3cd', padding: '10px', borderRadius: '6px', border: '1px solid #f5d76e', lineHeight: '1.4' }}>
+                <p style={{ fontSize: '11px', color: '#475569', fontStyle: 'italic', margin: 0, backgroundColor: '#fef3c7', padding: '10px', borderRadius: '6px', border: '1px solid #f59e0b' }}>
                   {selectedHito.fuente}
                 </p>
               </div>

@@ -7,13 +7,10 @@ interface Hito {
   titulo: string;
   subtitulo: string;
   descripcion: string;
-  contexto: string;
   icono: string;
-  iconoGrande: string;
   color: string;
   badgeBg: string;
   fuente: string;
-  impacto: string;
 }
 
 const hitos: Hito[] = [
@@ -24,12 +21,9 @@ const hitos: Hito[] = [
     titulo: "DERECHO ROMANO",
     subtitulo: "Hito: Lex Aquilia y res communis",
     descripcion: "Desde el derecho romano se gestaron los pilares doctrinales de la responsabilidad. La categoría de 'res communis' catalogaba recursos esenciales como el agua, el aire y el mar como bienes comunes de uso público. Paralelamente, la Lex Aquilia introdujo la obligación de reparar económicamente el daño injusto causado por culpa o dolo, conceptos históricos que siglos más tarde fundamentarían la protección del patrimonio natural y colectivo frente a los perjuicios ambientales.",
-    contexto: "El imperio romano desarrolló un sofisticado sistema legal que reconocía dos categorías de propiedad: la privada (res privatae) y la común (res communis). Esta distinción fue revolucionaria para su época, sentando el precedente de que ciertos recursos debían ser protegidos para el beneficio colectivo.",
     icono: "🏛️",
-    iconoGrande: "⚖️🏛️",
     color: "#fca5a5",
     badgeBg: "#f97316",
-    impacto: "Estableció el principio de reparación económica por daño injusto, base de la responsabilidad civil moderna",
     fuente: "Kerguelén Durango, E. A. (2016). Antecedentes históricos del derecho ambiental colombiano. Derecho y Sociedad, 1(1), 1-10."
   },
   {
@@ -39,12 +33,9 @@ const hitos: Hito[] = [
     titulo: "ERA REPUBLICANA",
     subtitulo: "Hito: Decretos bolivarianos de conservación forestal y de aguas",
     descripcion: "En los albores de la vida republicana, Simón Bolívar impulsó normativas y decretos pioneros en América Latina orientados a frenar la explotación desmedida de los bosques nacionales, regular la distribución equitativa de las aguas y proteger la fauna silvestre. Constituyen el primer antecedente formal de intervención estatal y gestión pública sobre los recursos naturales como patrimonio de la nación.",
-    contexto: "Bolívar emitió múltiples decretos que contemplaban la protección de ecosistemas estratégicos, la regulación de la tala de árboles y la garantía de acceso equitativo al agua. Estos actos administrativos pioneros fueron los primeros en América Latina en reconocer que los recursos naturales no eran infinitos y que su manejo requería regulación estatal.",
     icono: "📜",
-    iconoGrande: "🌳🇨🇴",
     color: "#e879f9",
     badgeBg: "#a855f7",
-    impacto: "Primer reconocimiento institucional de que los recursos naturales son patrimonio de la nación sujeto a regulación estatal",
     fuente: "Kerguelén Durango, E. A. (2016). Antecedentes históricos del derecho ambiental colombiano. Derecho y Sociedad, 1(1), 1-10."
   },
   {
@@ -54,73 +45,9 @@ const hitos: Hito[] = [
     titulo: "TEORÍA DEL RIESGO",
     subtitulo: "Hito: Evolución jurisprudencial de la responsabilidad extracontractual",
     descripcion: "La adopción de la teoría del riesgo creado supuso una evolución decisiva en la jurisprudencia contenciosa y civil, permitiendo imputar responsabilidad e indemnizar a las víctimas por el ejercicio de actividades peligrosas sin necesidad de demostrar la culpa directa del agente. Este criterio jurídico facilitó el camino para el resarcimiento frente a daños complejos al entorno y a la colectividad.",
-    contexto: "La teoría del riesgo creado surgió de decisiones judiciales que reconocieron que quien realiza actividades peligrosas debe responder por los daños aunque no medie culpa personal directa. Esto fue especialmente relevante para industrias y actividades extractivas que, aunque se realicen con cuidado, generan riesgos inherentes al ambiente.",
     icono: "⚖️",
-    iconoGrande: "⚠️⚖️",
     color: "#7dd3fc",
     badgeBg: "#dc2626",
-    impacto: "Permitió imputar responsabilidad por actividades peligrosas sin demostrar culpa directa, revolucionando la reparación de daños complejos",
-    fuente: "Velásquez Posada, O. (2013). Responsabilidad civil extracontractual (2da ed.). Temis; Universidad de La Sabana."
-  },
-  {
-    id: 4,
-    fecha: "1973–1974",
-    pos: "izquierda",
-    titulo: "CODIFICACIÓN AMBIENTAL",
-    subtitulo: "Hito: Ley 23 de 1973 y Código Nacional de Recursos Naturales",
-    descripcion: "La Ley 23 de 1973 marcó el nacimiento formal del derecho ambiental en Colombia al declarar los recursos naturales como patrimonio común de la sociedad. Posteriormente, el Código Nacional de Recursos Naturales (Ley 2811 de 1974) sistematizó la gestión ecológica e impuso la responsabilidad ineludible de prevenir y reparar el daño ambiental, dotando al Estado de las primeras herramientas normativas de control.",
-    contexto: "Estos instrumentos fueron revolucionarios en su momento, estableciendo un marco legal integral que abarcaba bosques, aguas, fauna y flora. El Código Nacional de Recursos Naturales fue considerado una de las legislaciones ambientales más avanzadas de América Latina en la década de 1970, incluyendo normas sobre contaminación, conservación de ecosistemas y responsabilidad por daño ambiental.",
-    icono: "📘",
-    iconoGrande: "📚🌿",
-    color: "#86efac",
-    badgeBg: "#eab308",
-    impacto: "Declaró los recursos naturales como patrimonio común e instituyó el deber de reparar el daño ambiental",
-    fuente: "Flórez Hernández, C., Quintana, B. V., & Molina Romero, M. (2024). Hitos de la normatividad colombiana en materia de protección ambiental y su desarrollo jurisprudencial. Revista Jurídica Mario Alario D'Filippo, 16(33), 184-201."
-  },
-  {
-    id: 5,
-    fecha: "1991",
-    pos: "derecha",
-    titulo: "CONSTITUCIÓN ECOLÓGICA",
-    subtitulo: "Hito: Derechos colectivos, medio ambiente y acciones populares",
-    descripcion: "La Asamblea Nacional Constituyente consagró la denominada 'Constitución Ecológica' al integrar más de 49 disposiciones sobre medio ambiente. Elevó el ambiente sano a rango de derecho colectivo fundamental e instituyó mecanismos procesales constitucionales de gran calado como la Acción Popular (respaldada por la Ley 472), permitiendo exigir judicialmente la prevención y restauración de los daños al ecosistema.",
-    contexto: "La Constitución de 1991 incorporó más disposiciones ambientales que cualquier constitución anterior en Colombia. Artículos clave como el 49 (derecho a la salud y ambiente sano), 80 (deber del Estado de proteger la diversidad), y otros reconocieron que la protección ambiental es un asunto de interés general. La Acción Popular permitió a cualquier ciudadano demandar por daños ambientales sin necesidad de demostrar daño personal.",
-    icono: "🇨🇴",
-    iconoGrande: "📜🌍",
-    color: "#fbcfe8",
-    badgeBg: "#78350f",
-    impacto: "Elevar el ambiente sano a derecho colectivo fundamental y crear acciones judiciales populares para su protección",
-    fuente: "Colombia. Asamblea Nacional Constituyente. (1991). Derechos colectivos, medio ambiente y acciones populares (Proyecto de Acto Constituyente No. 62)."
-  },
-  {
-    id: 6,
-    fecha: "1993",
-    pos: "izquierda",
-    titulo: "REESTRUCTURACIÓN SINA",
-    subtitulo: "Hito: Ley 99 de 1993, Ministerio de Ambiente e instrumentos económicos",
-    descripcion: "La Ley 99 de 1993 estructuró la institucionalidad moderna creando el Ministerio del Ambiente y el Sistema Nacional Ambiental (SINA). Descentralizó el control a través de las Corporaciones Autónomas Regionales e incorporó instrumentos económicos de gestión ambiental (tasas retributivas, compensatorias y multas) para desincentivar la contaminación y alinear la economía con el desarrollo sostenible.",
-    contexto: "El SINA se conformó por organismos de control nacional y regional, incluyendo INDERENA, CORNARE, CAR y otras corporaciones regionales. La Ley 99 fue innovadora al combinar regulación directa con instrumentos económicos, permitiendo que quienes contaminan paguen por el daño causado. Las tasas retributivas se aplicaban a descargas de residuos líquidos, y las compensatorias al uso de recursos renovables.",
-    icono: "🏛️",
-    iconoGrande: "🌎📊",
-    color: "#fed7aa",
-    badgeBg: "#ec4899",
-    impacto: "Creó institucionalidad moderna ambiental con instrumentos económicos que alinean mercado con sostenibilidad",
-    fuente: "Valencia Hernández, J. G. (2007). Estado ambiental, democracia y participación ciudadana en Colombia a partir de la Constitución de 1991. Jurídicas, 4(2), 163-185."
-  },
-  {
-    id: 7,
-    fecha: "2009–Actual",
-    pos: "derecha",
-    titulo: "RÉGIMEN SANCIONATORIO",
-    subtitulo: "Hito: Ley 1333 de 2009, precaución y nuevas tendencias de aseguramiento",
-    descripcion: "La Ley 1333 de 2009 consolidó el régimen sancionatorio ambiental, dotando a las autoridades de facultades para imponer medidas preventivas y multas de hasta 5,000 salarios mínimos con enfoque estricto en la restauración. Hoy en día, este marco se complementa con la aplicación jurisprudencial del principio de precaución (Buitrago Dangond, 2018) y los retos del aseguramiento de la responsabilidad civil frente al cambio climático.",
-    contexto: "La Ley 1333 estableció un sistema progresivo de sanciones: amonestación, multas, decomiso de productos, cierre de operaciones y restitución. El principio de precaución adoptado permite tomar medidas preventivas incluso con incertidumbre científica completa si existe riesgo potencial de daño ambiental grave. Esta ley refleja la evolución hacia una responsabilidad ambiental más estricta y la importancia creciente de prevenir en lugar de solo remediar.",
-    icono: "⚠️",
-    iconoGrande: "⚠️🔒",
-    color: "#fca5a5",
-    badgeBg: "#e11d48",
-    impacto: "Régimen sancionatorio exhaustivo con enfoque preventivo y aplicación del principio de precaución ante incertidumbre científica",
-    fuente: "Cancelado Ávila, D. F., Solís Yepes, J. L., & Díaz Castillo, W. J. (s.f.). Capítulo IV: Parangón e implementación de los instrumentos económicos de política ambiental y sanciones por daños al medio ambiente en epicentros de conflicto armado en Colombia. En Análisis jurídico de protección a las víctimas y del medio ambiente (pp. 111-131). Escuela Superior de Guerra."
     fuente: "Velásquez Posada, O. (2013). Responsabilidad civil extracontractual (2da ed.). Temis; Universidad de La Sabana."
   },
   {
@@ -193,7 +120,6 @@ const referenciasLista = [
 
 export default function App() {
   const [selectedHito, setSelectedHito] = useState<Hito | null>(null);
-  const [hoveredHito, setHoveredHito] = useState<number | null>(null);
 
   // Iconos de naturaleza seleccionados con criterio estético audiovisual (fauna, flora y ecosistemas)
   const iconosNaturaleza = ["🌿", "🌸", "🦋", "🌲", "🦜", "🌱", "🌺"];
@@ -281,20 +207,25 @@ export default function App() {
                   {isLeft ? (
                     <div 
                       onClick={() => setSelectedHito(hito)}
-                      onMouseEnter={() => setHoveredHito(hito.id)}
-                      onMouseLeave={() => setHoveredHito(null)}
                       style={{
                         backgroundColor: '#ffffff',
                         border: '3px solid #1e293b',
                         borderRadius: '8px',
-                        boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
+                        boxShadow: '6px 6px 0px 0px #1e293b',
                         textAlign: 'left',
                         display: 'inline-block',
                         width: '100%',
                         overflow: 'hidden',
                         cursor: 'pointer',
-                        transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                        transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)'
+                        transition: 'all 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-3px)';
+                        e.currentTarget.style.boxShadow = '8px 8px 0px 0px #1e293b';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = '6px 6px 0px 0px #1e293b';
                       }}
                     >
                       <div style={{
@@ -316,33 +247,16 @@ export default function App() {
                         <div style={{ fontSize: '11px', fontWeight: '900', color: '#1e293b', marginBottom: '6px' }}>
                           {hito.subtitulo}
                         </div>
-                        <p style={{ fontSize: '11px', color: '#334155', margin: '0 0 10px 0', lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                        <p style={{ fontSize: '11px', color: '#334155', margin: 0, lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                           {hito.descripcion}
                         </p>
-                        <div style={{
-                          backgroundColor: '#f0fdf4',
-                          border: '1px solid #86efac',
-                          borderRadius: '6px',
-                          padding: '8px',
-                          marginBottom: '10px',
-                          fontSize: '10px',
-                          fontWeight: '700',
-                          color: '#166534',
-                          transition: 'all 0.3s ease',
-                          maxHeight: hoveredHito === hito.id ? '100px' : '0px',
-                          opacity: hoveredHito === hito.id ? 1 : 0,
-                          overflow: 'hidden'
-                        }}>
-                          <span style={{ fontWeight: '900', display: 'block', marginBottom: '4px' }}>✨ Impacto clave:</span>
-                          {hito.impacto}
-                        </div>
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
+                        <div style={{ marginTop: '10px', display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
                           <span>📖</span> Ampliar información y ver cita
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(-10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
+                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', fontSize: '32px' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
                     </div>
                   )}
@@ -359,11 +273,9 @@ export default function App() {
                     fontSize: '10px',
                     fontWeight: '900',
                     textAlign: 'center',
-                    boxShadow: hoveredHito === hito.id ? '0px 0px 12px rgba(0,0,0,0.3)' : '4px 4px 0px 0px #1e293b',
+                    boxShadow: '4px 4px 0px 0px #1e293b',
                     whiteSpace: 'nowrap',
-                    zIndex: 3,
-                    transition: 'all 0.3s ease',
-                    transform: hoveredHito === hito.id ? 'scale(1.1)' : 'scale(1)'
+                    zIndex: 3
                   }}>
                     {hito.fecha}
                   </div>
@@ -374,20 +286,25 @@ export default function App() {
                   {!isLeft ? (
                     <div 
                       onClick={() => setSelectedHito(hito)}
-                      onMouseEnter={() => setHoveredHito(hito.id)}
-                      onMouseLeave={() => setHoveredHito(null)}
                       style={{
                         backgroundColor: '#ffffff',
                         border: '3px solid #1e293b',
                         borderRadius: '8px',
-                        boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
+                        boxShadow: '6px 6px 0px 0px #1e293b',
                         textAlign: 'left',
                         display: 'inline-block',
                         width: '100%',
                         overflow: 'hidden',
                         cursor: 'pointer',
-                        transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                        transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)'
+                        transition: 'all 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-3px)';
+                        e.currentTarget.style.boxShadow = '8px 8px 0px 0px #1e293b';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = '6px 6px 0px 0px #1e293b';
                       }}
                     >
                       <div style={{
@@ -409,33 +326,16 @@ export default function App() {
                         <div style={{ fontSize: '11px', fontWeight: '900', color: '#1e293b', marginBottom: '6px' }}>
                           {hito.subtitulo}
                         </div>
-                        <p style={{ fontSize: '11px', color: '#334155', margin: '0 0 10px 0', lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                        <p style={{ fontSize: '11px', color: '#334155', margin: 0, lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                           {hito.descripcion}
                         </p>
-                        <div style={{
-                          backgroundColor: '#f0fdf4',
-                          border: '1px solid #86efac',
-                          borderRadius: '6px',
-                          padding: '8px',
-                          marginBottom: '10px',
-                          fontSize: '10px',
-                          fontWeight: '700',
-                          color: '#166534',
-                          transition: 'all 0.3s ease',
-                          maxHeight: hoveredHito === hito.id ? '100px' : '0px',
-                          opacity: hoveredHito === hito.id ? 1 : 0,
-                          overflow: 'hidden'
-                        }}>
-                          <span style={{ fontWeight: '900', display: 'block', marginBottom: '4px' }}>✨ Impacto clave:</span>
-                          {hito.impacto}
-                        </div>
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
+                        <div style={{ marginTop: '10px', display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '10px', fontWeight: '800', color: '#2563eb', backgroundColor: '#eff6ff', padding: '4px 8px', borderRadius: '4px', border: '1px solid #bfdbfe' }}>
                           <span>📖</span> Ampliar información y ver cita
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
+                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '32px' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
                     </div>
                   )}
@@ -530,47 +430,21 @@ export default function App() {
               </button>
             </div>
             <div style={{ padding: '24px' }}>
-              <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-                <div style={{ fontSize: '48px', marginBottom: '12px', animation: 'pulse 2s infinite' }}>
-                  {selectedHito.iconoGrande}
-                </div>
-              </div>
-              
               <div style={{ display: 'inline-block', backgroundColor: selectedHito.badgeBg, color: '#fff', fontSize: '10px', fontWeight: '900', padding: '5px 10px', borderRadius: '6px', marginBottom: '12px', border: '2px solid #1e293b' }}>
                 {selectedHito.fecha}
               </div>
-              
               <h3 style={{ fontSize: '13px', fontWeight: '900', color: '#1e293b', margin: '0 0 10px 0' }}>
                 {selectedHito.subtitulo}
               </h3>
-              
-              <p style={{ fontSize: '11px', color: '#334155', lineHeight: '1.6', margin: '0 0 16px 0', backgroundColor: '#f8fafc', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
+              <p style={{ fontSize: '11px', color: '#334155', lineHeight: '1.6', margin: '0 0 18px 0', backgroundColor: '#f8fafc', padding: '12px', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
                 {selectedHito.descripcion}
               </p>
-
-              <div style={{ backgroundColor: '#f0fdf4', border: '2px solid #86efac', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#166534', display: 'block', marginBottom: '6px' }}>
-                  📌 Contexto Histórico:
-                </span>
-                <p style={{ fontSize: '11px', color: '#15803d', margin: 0, lineHeight: '1.5' }}>
-                  {selectedHito.contexto}
-                </p>
-              </div>
-
-              <div style={{ backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '8px', padding: '12px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#92400e', display: 'block', marginBottom: '6px' }}>
-                  ✨ Impacto Jurídico y Social:
-                </span>
-                <p style={{ fontSize: '11px', color: '#b45309', margin: 0, lineHeight: '1.5', fontWeight: '600' }}>
-                  {selectedHito.impacto}
-                </p>
-              </div>
               
               <div style={{ borderTop: '2px dashed #cbd5e1', paddingTop: '14px' }}>
                 <span style={{ fontSize: '10px', fontWeight: '900', textTransform: 'uppercase', color: '#1e293b', display: 'block', marginBottom: '6px' }}>
                   📖 Referencia Bibliográfica Oficial:
                 </span>
-                <p style={{ fontSize: '10px', color: '#475569', fontStyle: 'italic', margin: 0, backgroundColor: '#fff3cd', padding: '10px', borderRadius: '6px', border: '1px solid #f5d76e', lineHeight: '1.4' }}>
+                <p style={{ fontSize: '11px', color: '#475569', fontStyle: 'italic', margin: 0, backgroundColor: '#fef3c7', padding: '10px', borderRadius: '6px', border: '1px solid #f59e0b' }}>
                   {selectedHito.fuente}
                 </p>
               </div>
