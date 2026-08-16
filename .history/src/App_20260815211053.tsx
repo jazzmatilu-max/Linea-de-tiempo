@@ -144,12 +144,9 @@ const hitos: Hito[] = [
     titulo: "CONSTITUCIÓN ECOLÓGICA",
     subtitulo: "Hito: Derechos colectivos, medio ambiente y acciones populares",
     descripcion: "La Asamblea Nacional Constituyente consagró la denominada 'Constitución Ecológica' al integrar más de 49 disposiciones sobre medio ambiente. Elevó el ambiente sano a rango de derecho colectivo fundamental e instituyó mecanismos procesales constitucionales de gran calado como la Acción Popular (respaldada por la Ley 472), permitiendo exigir judicialmente la prevención y restauración de los daños al ecosistema.",
-    contexto: "La Constitución de 1991 incorporó más disposiciones ambientales que cualquier constitución anterior en Colombia. Artículos clave como el 49 (derecho a la salud y ambiente sano), 80 (deber del Estado de proteger la diversidad), y otros reconocieron que la protección ambiental es un asunto de interés general. La Acción Popular permitió a cualquier ciudadano demandar por daños ambientales sin necesidad de demostrar daño personal.",
     icono: "🇨🇴",
-    iconoGrande: "📜🌍",
     color: "#fbcfe8",
     badgeBg: "#78350f",
-    impacto: "Elevar el ambiente sano a derecho colectivo fundamental y crear acciones judiciales populares para su protección",
     fuente: "Colombia. Asamblea Nacional Constituyente. (1991). Derechos colectivos, medio ambiente y acciones populares (Proyecto de Acto Constituyente No. 62)."
   },
   {
@@ -159,12 +156,9 @@ const hitos: Hito[] = [
     titulo: "REESTRUCTURACIÓN SINA",
     subtitulo: "Hito: Ley 99 de 1993, Ministerio de Ambiente e instrumentos económicos",
     descripcion: "La Ley 99 de 1993 estructuró la institucionalidad moderna creando el Ministerio del Ambiente y el Sistema Nacional Ambiental (SINA). Descentralizó el control a través de las Corporaciones Autónomas Regionales e incorporó instrumentos económicos de gestión ambiental (tasas retributivas, compensatorias y multas) para desincentivar la contaminación y alinear la economía con el desarrollo sostenible.",
-    contexto: "El SINA se conformó por organismos de control nacional y regional, incluyendo INDERENA, CORNARE, CAR y otras corporaciones regionales. La Ley 99 fue innovadora al combinar regulación directa con instrumentos económicos, permitiendo que quienes contaminan paguen por el daño causado. Las tasas retributivas se aplicaban a descargas de residuos líquidos, y las compensatorias al uso de recursos renovables.",
     icono: "🏛️",
-    iconoGrande: "🌎📊",
     color: "#fed7aa",
     badgeBg: "#ec4899",
-    impacto: "Creó institucionalidad moderna ambiental con instrumentos económicos que alinean mercado con sostenibilidad",
     fuente: "Valencia Hernández, J. G. (2007). Estado ambiental, democracia y participación ciudadana en Colombia a partir de la Constitución de 1991. Jurídicas, 4(2), 163-185."
   },
   {
@@ -285,55 +279,26 @@ export default function App() {
               <div key={hito.id} style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
                 
                 {/* Lado Izquierdo */}
-                <div style={{ width: '45%', textAlign: 'right', paddingRight: '35px', position: 'relative' }}>
+                <div style={{ width: '45%', textAlign: 'right', paddingRight: '35px' }}>
                   {isLeft ? (
-                    <>
-                      {/* Línea conectora del lado izquierdo */}
-                      <div style={{
-                        position: 'absolute',
-                        right: '-15px',
-                        top: '50%',
-                        width: '15px',
-                        height: '2px',
-                        backgroundColor: '#1e293b',
-                        transform: 'translateY(-50%)',
-                        zIndex: 0
-                      }}></div>
-                      
-                      {/* Punta de flecha */}
-                      <div style={{
-                        position: 'absolute',
-                        right: '-20px',
-                        top: '50%',
-                        width: '0',
-                        height: '0',
-                        borderStyle: 'solid',
-                        borderWidth: '5px 7px 5px 0',
-                        borderColor: 'transparent #1e293b transparent transparent',
-                        transform: 'translateY(-50%)',
-                        zIndex: 0
-                      }}></div>
-                      
-                      <div 
-                        onClick={() => setSelectedHito(hito)}
-                        onMouseEnter={() => setHoveredHito(hito.id)}
-                        onMouseLeave={() => setHoveredHito(null)}
-                        style={{
-                          backgroundColor: '#ffffff',
-                          border: '3px solid #1e293b',
-                          borderRadius: '8px',
-                          boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
-                          textAlign: 'left',
-                          display: 'inline-block',
-                          width: '100%',
-                          overflow: 'hidden',
-                          cursor: 'pointer',
-                          transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                          transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)',
-                          position: 'relative',
-                          zIndex: 2
-                        }}
-                      >
+                    <div 
+                      onClick={() => setSelectedHito(hito)}
+                      onMouseEnter={() => setHoveredHito(hito.id)}
+                      onMouseLeave={() => setHoveredHito(null)}
+                      style={{
+                        backgroundColor: '#ffffff',
+                        border: '3px solid #1e293b',
+                        borderRadius: '8px',
+                        boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
+                        textAlign: 'left',
+                        display: 'inline-block',
+                        width: '100%',
+                        overflow: 'hidden',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                        transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)'
+                      }}
+                    >
                       <div style={{
                         backgroundColor: hito.color,
                         padding: '8px 14px',
@@ -378,7 +343,6 @@ export default function App() {
                         </div>
                       </div>
                     </div>
-                    </>
                   ) : (
                     <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(-10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
@@ -408,55 +372,26 @@ export default function App() {
                 </div>
 
                 {/* Lado Derecho */}
-                <div style={{ width: '45%', textAlign: 'left', paddingLeft: '35px', position: 'relative' }}>
+                <div style={{ width: '45%', textAlign: 'left', paddingLeft: '35px' }}>
                   {!isLeft ? (
-                    <>
-                      {/* Línea conectora del lado derecho */}
-                      <div style={{
-                        position: 'absolute',
-                        left: '-15px',
-                        top: '50%',
-                        width: '15px',
-                        height: '2px',
-                        backgroundColor: '#1e293b',
-                        transform: 'translateY(-50%)',
-                        zIndex: 0
-                      }}></div>
-                      
-                      {/* Punta de flecha */}
-                      <div style={{
-                        position: 'absolute',
-                        left: '-20px',
-                        top: '50%',
-                        width: '0',
-                        height: '0',
-                        borderStyle: 'solid',
-                        borderWidth: '5px 0 5px 7px',
-                        borderColor: 'transparent transparent transparent #1e293b',
-                        transform: 'translateY(-50%)',
-                        zIndex: 0
-                      }}></div>
-                      
-                      <div 
-                        onClick={() => setSelectedHito(hito)}
-                        onMouseEnter={() => setHoveredHito(hito.id)}
-                        onMouseLeave={() => setHoveredHito(null)}
-                        style={{
-                          backgroundColor: '#ffffff',
-                          border: '3px solid #1e293b',
-                          borderRadius: '8px',
-                          boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
-                          textAlign: 'left',
-                          display: 'inline-block',
-                          width: '100%',
-                          overflow: 'hidden',
-                          cursor: 'pointer',
-                          transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                          transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)',
-                          position: 'relative',
-                          zIndex: 2
-                        }}
-                      >
+                    <div 
+                      onClick={() => setSelectedHito(hito)}
+                      onMouseEnter={() => setHoveredHito(hito.id)}
+                      onMouseLeave={() => setHoveredHito(null)}
+                      style={{
+                        backgroundColor: '#ffffff',
+                        border: '3px solid #1e293b',
+                        borderRadius: '8px',
+                        boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
+                        textAlign: 'left',
+                        display: 'inline-block',
+                        width: '100%',
+                        overflow: 'hidden',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                        transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)'
+                      }}
+                    >
                       <div style={{
                         backgroundColor: hito.color,
                         padding: '8px 14px',
@@ -501,7 +436,6 @@ export default function App() {
                         </div>
                       </div>
                     </div>
-                    </>
                   ) : (
                     <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}

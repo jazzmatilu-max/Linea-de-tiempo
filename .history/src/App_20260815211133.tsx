@@ -285,55 +285,26 @@ export default function App() {
               <div key={hito.id} style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
                 
                 {/* Lado Izquierdo */}
-                <div style={{ width: '45%', textAlign: 'right', paddingRight: '35px', position: 'relative' }}>
+                <div style={{ width: '45%', textAlign: 'right', paddingRight: '35px' }}>
                   {isLeft ? (
-                    <>
-                      {/* Línea conectora del lado izquierdo */}
-                      <div style={{
-                        position: 'absolute',
-                        right: '-15px',
-                        top: '50%',
-                        width: '15px',
-                        height: '2px',
-                        backgroundColor: '#1e293b',
-                        transform: 'translateY(-50%)',
-                        zIndex: 0
-                      }}></div>
-                      
-                      {/* Punta de flecha */}
-                      <div style={{
-                        position: 'absolute',
-                        right: '-20px',
-                        top: '50%',
-                        width: '0',
-                        height: '0',
-                        borderStyle: 'solid',
-                        borderWidth: '5px 7px 5px 0',
-                        borderColor: 'transparent #1e293b transparent transparent',
-                        transform: 'translateY(-50%)',
-                        zIndex: 0
-                      }}></div>
-                      
-                      <div 
-                        onClick={() => setSelectedHito(hito)}
-                        onMouseEnter={() => setHoveredHito(hito.id)}
-                        onMouseLeave={() => setHoveredHito(null)}
-                        style={{
-                          backgroundColor: '#ffffff',
-                          border: '3px solid #1e293b',
-                          borderRadius: '8px',
-                          boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
-                          textAlign: 'left',
-                          display: 'inline-block',
-                          width: '100%',
-                          overflow: 'hidden',
-                          cursor: 'pointer',
-                          transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                          transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)',
-                          position: 'relative',
-                          zIndex: 2
-                        }}
-                      >
+                    <div 
+                      onClick={() => setSelectedHito(hito)}
+                      onMouseEnter={() => setHoveredHito(hito.id)}
+                      onMouseLeave={() => setHoveredHito(null)}
+                      style={{
+                        backgroundColor: '#ffffff',
+                        border: '3px solid #1e293b',
+                        borderRadius: '8px',
+                        boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
+                        textAlign: 'left',
+                        display: 'inline-block',
+                        width: '100%',
+                        overflow: 'hidden',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                        transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)'
+                      }}
+                    >
                       <div style={{
                         backgroundColor: hito.color,
                         padding: '8px 14px',
@@ -378,7 +349,6 @@ export default function App() {
                         </div>
                       </div>
                     </div>
-                    </>
                   ) : (
                     <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(-10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
@@ -408,55 +378,26 @@ export default function App() {
                 </div>
 
                 {/* Lado Derecho */}
-                <div style={{ width: '45%', textAlign: 'left', paddingLeft: '35px', position: 'relative' }}>
+                <div style={{ width: '45%', textAlign: 'left', paddingLeft: '35px' }}>
                   {!isLeft ? (
-                    <>
-                      {/* Línea conectora del lado derecho */}
-                      <div style={{
-                        position: 'absolute',
-                        left: '-15px',
-                        top: '50%',
-                        width: '15px',
-                        height: '2px',
-                        backgroundColor: '#1e293b',
-                        transform: 'translateY(-50%)',
-                        zIndex: 0
-                      }}></div>
-                      
-                      {/* Punta de flecha */}
-                      <div style={{
-                        position: 'absolute',
-                        left: '-20px',
-                        top: '50%',
-                        width: '0',
-                        height: '0',
-                        borderStyle: 'solid',
-                        borderWidth: '5px 0 5px 7px',
-                        borderColor: 'transparent transparent transparent #1e293b',
-                        transform: 'translateY(-50%)',
-                        zIndex: 0
-                      }}></div>
-                      
-                      <div 
-                        onClick={() => setSelectedHito(hito)}
-                        onMouseEnter={() => setHoveredHito(hito.id)}
-                        onMouseLeave={() => setHoveredHito(null)}
-                        style={{
-                          backgroundColor: '#ffffff',
-                          border: '3px solid #1e293b',
-                          borderRadius: '8px',
-                          boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
-                          textAlign: 'left',
-                          display: 'inline-block',
-                          width: '100%',
-                          overflow: 'hidden',
-                          cursor: 'pointer',
-                          transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                          transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)',
-                          position: 'relative',
-                          zIndex: 2
-                        }}
-                      >
+                    <div 
+                      onClick={() => setSelectedHito(hito)}
+                      onMouseEnter={() => setHoveredHito(hito.id)}
+                      onMouseLeave={() => setHoveredHito(null)}
+                      style={{
+                        backgroundColor: '#ffffff',
+                        border: '3px solid #1e293b',
+                        borderRadius: '8px',
+                        boxShadow: hoveredHito === hito.id ? '10px 10px 0px 0px #1e293b' : '6px 6px 0px 0px #1e293b',
+                        textAlign: 'left',
+                        display: 'inline-block',
+                        width: '100%',
+                        overflow: 'hidden',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                        transform: hoveredHito === hito.id ? 'translateY(-5px) scale(1.02)' : 'translateY(0) scale(1)'
+                      }}
+                    >
                       <div style={{
                         backgroundColor: hito.color,
                         padding: '8px 14px',
@@ -501,7 +442,6 @@ export default function App() {
                         </div>
                       </div>
                     </div>
-                    </>
                   ) : (
                     <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}

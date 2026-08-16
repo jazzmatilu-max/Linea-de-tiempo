@@ -501,7 +501,6 @@ export default function App() {
                         </div>
                       </div>
                     </div>
-                    </>
                   ) : (
                     <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '40px', transition: 'transform 0.3s ease', transform: hoveredHito === hito.id ? 'scale(1.2) rotate(10deg)' : 'scale(1) rotate(0deg)' }} title="Elemento de biodiversidad y naturaleza">
                       {iconoFloral}
